@@ -10,6 +10,8 @@
 </head>
 <body>
 
+<div th:replace="base :: navlinks"></div>
+
 <table>
     <tr th:each="department : ${departments}">
         <td th:text="${department.departmentName}"></td>

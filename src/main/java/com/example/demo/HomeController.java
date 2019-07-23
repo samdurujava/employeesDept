@@ -78,7 +78,7 @@ public class HomeController {
     @RequestMapping("/detail/{id}")
     public String showDepartment(@PathVariable("id") long id, Model model){
         model.addAttribute("department", departmentRepository.findById(id).get());
-        return "showdepartment";
+        return "departmentShow";
     }
 
     @RequestMapping("/update/{id}")
@@ -96,7 +96,7 @@ public class HomeController {
     @RequestMapping("/detail_employee/{id}")
     public String showEmployee(@PathVariable("id") long id, Model model){
         model.addAttribute("employee", employeeRepository.findById(id).get());
-        return "showemployee";
+        return "employeeShow";
     }
 
     @RequestMapping("/update_employee/{id}")

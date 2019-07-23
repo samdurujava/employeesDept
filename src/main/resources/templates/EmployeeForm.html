@@ -10,6 +10,9 @@
 </head>
 <body>
 
+<div th:replace="base :: navlinks"></div>
+
+
 <form action="#" th:action="@{/process_employee}" th:object="${employee}" method="post">
     <input type="hidden" th:field="*{employeeID}">
 

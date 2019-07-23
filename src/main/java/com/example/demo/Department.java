@@ -13,7 +13,7 @@ public class Department {
 
     private String departmentName;
 
-    //private ArrayList<Employee> employee;
+    private ArrayList<Employee> employee;
 
     @OneToMany(mappedBy = "department",
             cascade = CascadeType.ALL, fetch = FetchType.EAGER)
